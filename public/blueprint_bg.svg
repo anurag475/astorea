@@ -1,0 +1,45 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+    <g fill="none" stroke="#9ca3af" stroke-width="1" opacity="0.6">
+        <!-- Grid/Guides -->
+        <path d="M0 100 h800 M0 200 h800 M0 300 h800 M0 400 h800 M0 500 h800" stroke-dasharray="4 4" opacity="0.3" />
+        <path d="M100 0 v600 M200 0 v600 M300 0 v600 M400 0 v600 M500 0 v600 M600 0 v600 M700 0 v600" stroke-dasharray="4 4" opacity="0.3" />
+
+        <!-- Technical Shapes / Floor Plan Elements -->
+        <!-- Main Structure Outline -->
+        <path d="M150 150 h500 v300 h-500 z" stroke-width="2" />
+        
+        <!-- Interior Walls -->
+        <path d="M150 250 h200 v200" />
+        <path d="M450 150 v150 h200" />
+        <path d="M350 350 h100 v100" />
+        
+        <!-- Circular Elements / Arcs -->
+        <circle cx="350" cy="250" r="40" stroke-dasharray="8 4" />
+        <path d="M450 450 a50 50 0 0 1 -50 -50" />
+        
+        <!-- Measurement Lines -->
+        <g stroke="#6b7280" opacity="0.8">
+            <path d="M150 130 h500" />
+            <path d="M150 125 v10" />
+            <path d="M650 125 v10" />
+            <text x="400" y="120" fill="#6b7280" font-family="monospace" font-size="12" text-anchor="middle" stroke="none">24.5 m</text>
+        </g>
+        
+        <g stroke="#6b7280" opacity="0.8">
+            <path d="M670 150 v300" />
+            <path d="M665 150 h10" />
+            <path d="M665 450 h10" />
+            <text x="680" y="300" fill="#6b7280" font-family="monospace" font-size="12" text-anchor="start" transform="rotate(90 680 300)" stroke="none">15.2 m</text>
+        </g>
+
+        <!-- Crosshairs / Targets -->
+        <g transform="translate(150, 150)">
+            <circle cx="0" cy="0" r="10" />
+            <path d="M-15 0 h30 M0 -15 v30" />
+        </g>
+        <g transform="translate(650, 450)">
+            <circle cx="0" cy="0" r="10" />
+            <path d="M-15 0 h30 M0 -15 v30" />
+        </g>
+    </g>
+</svg>
